@@ -24,11 +24,23 @@ public class ClientService {
     }
     
     public List<ClientModel> getClientByName(String name){
-        return this.repository.findByName(name).orElseThrow(() -> new EntityNotFoundException("Cliente não cadastrado!"));
+        List<ClientModel> clients = this.repository.findByName(name);
+
+        if(clients.size() == 0){
+            throw new EntityNotFoundException("Não há clientes cadastrados!");
+        }
+
+        return clients;
     }
 
     public List<ClientModel> getClientByEmail(String email){
-        return this.repository.findByEmail(email).orElseThrow(() -> new EntityNotFoundException("Cliente não cadastrado"));
+        List<ClientModel> clients = this.repository.findByEmail(email);
+
+        if(clients.size() == 0){
+            throw new EntityNotFoundException("Não há clientes cadastrados!");
+        }
+
+        return clients;
     }
 
     public void deleteClientById(int id){
