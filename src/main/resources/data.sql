@@ -1,0 +1,4 @@
+INSERT INTO CLIENT_TB (NAME, EMAIL, PHONE, ADDRESS, ZIPCODE, CITY, STATE) VALUES ('CLIENT 1','client1@gmail.com',null, 'rua 4', '12233388', 'itu', 'sp');
+INSERT INTO CLIENT_TB (NAME, EMAIL, PHONE, ADDRESS, ZIPCODE, CITY, STATE) VALUES ('CLIENT 2','client2@gmail.com',null, 'rua 4', '12233388', 'itu', 'sp');
+INSERT INTO CLIENT_TB (NAME, EMAIL, PHONE, ADDRESS, ZIPCODE, CITY, STATE) VALUES ('CLIENT 3','client3@gmail.com',null, 'rua 4', '12233388', 'itu', 'sp');
+INSERT INTO CLIENT_TB (NAME, EMAIL, PHONE, ADDRESS, ZIPCODE, CITY, STATE) VALUES ('CLIENT 4','client4@gmail.com',null, 'rua 4', '12233388', 'itu', 'sp');
